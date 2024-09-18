@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contactos</title>
+</head>
+<body class="color">
+<!-- menu de navegacion  -->
+    <header>
+        <div class="container">
+            <a href="../index.html">
+                <img class="imgg" src="../img/logo-dbz-11.png" alt="logo de dragonball" class="img-fluid">
+            </a> 
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="figuras.html">Figuras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="accesorios.html">Accesorios</a></li>
+                    <li class="nav-item"><a class="nav-link activo" href="#">Contactos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobrenosotros.html">Sobre nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--datos personales  -->
+    <main class="container">
+        <h2 class="separar">Contacto</h2>
+        <form action="submit_form.php" method="POST">
+            <fieldset class="form-group">
+                <legend>Datos Básicos</legend>
+                <div class="form-group">
+                    <label for="form-name">Nombre</label>
+                    <input type="text" id="form-name" name="name-user" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="form-lastname">Apellido</label>
+                    <input type="text" id="form-lastname" name="apellido" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="form-email">Correo electrónico</label>
+                    <input type="email" name="correo" id="form-email" class="form-control" required>
+                </div>
+            </fieldset>
+            <fieldset class="form-group">
+                <legend>Nacimiento</legend>
+                <div class="form-group">
+                    <label for="form-date">Fecha de nacimiento</label>
+                    <input type="date" id="form-date" name="nacimiento" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="form-country">Nacionalidad</label>
+                    <select name="nacionalidad" id="form-country" class="form-control" required>
+                        <option value="none"></option>
+                        <option value="arg">Argentina</option>
+                        <option value="bra">Brasil</option>
+                        <option value="uru">Uruguay</option>
+                        <option value="mex">México</option>
+                        <option value="jap">Japón</option>
+                        <option value="cl">Chile</option>
+                        <option value="col">Colombia</option>
+                        <option value="per">Perú</option>
+                        <option value="bol">Bolivia</option>
+                        <option value="ven">Venezuela</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset class="form-group">
+                <legend>Género</legend>
+                <div class="form-check">
+                    <input type="radio" id="form-gender-male" name="gender-form" value="male" class="form-check-input" required>
+                    <label for="form-gender-male" class="form-check-label">Masculino</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="form-gender-female" name="gender-form" value="female" class="form-check-input" required>
+                    <label for="form-gender-female" class="form-check-label">Femenino</label>
+                </div>
+            </fieldset>
+            <fieldset class="form-group">
+                <legend>Hobbies</legend>
+                <div class="form-check">
+                    <input type="checkbox" id="hobbie-reading" name="hobbies" value="lectura" class="form-check-input">
+                    <label for="hobbie-reading" class="form-check-label">Lectura</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="hobbie-music" name="hobbies" value="musica" class="form-check-input">
+                    <label for="hobbie-music" class="form-check-label">Música</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="hobbie-studies" name="hobbies" value="estudios" class="form-check-input">
+                    <label for="hobbie-studies" class="form-check-label">Estudios</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="hobbie-videogames" name="hobbies" value="videojuegos" class="form-check-input">
+                    <label for="hobbie-videogames" class="form-check-label">Videojuegos</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="hobbie-sports" name="hobbies" value="deportes" class="form-check-input">
+                    <label for="hobbie-sports" class="form-check-label">Deportes</label>
+                </div>
+            </fieldset>
+            <fieldset class="form-group">
+                <legend>Mensaje</legend>
+                <div class="form-group">
+                    <label for="form-message">Tu pregunta</label>
+                    <textarea id="form-message" name="mensaje" rows="4" class="form-control" required></textarea>
+                </div>
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </main>
+    <!-- pie de pagina -->
+    <footer class="footer-contacto text-center p-3 mt-4">
+        <h4>Todos los derechos reservados</h4>
+    </footer>
+    
+</body>
+</html>
+

@@ -1,0 +1,155 @@
+/* reset */
+
+*{margin: 0;
+padding: 0;
+box-sizing: 0;}
+
+ /*fuente del sitio web  */
+
+*{
+ font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;}
+
+
+/* estilos del header */
+
+header{
+    background-color: rgb(29, 29, 100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    ;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+nav ul li a{
+    color: rgb(189, 107, 0);
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.activo{color: black;}
+
+/* estilos del main */
+
+main{
+    padding: 60px;
+    background-color: rgb(42, 42, 122);
+    color: white;
+}
+
+main h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(189, 107, 0)
+}
+
+.h2{
+    text-align: left;
+    color: rgb(189, 107, 0);
+    padding: 30px;
+}
+.imgg{
+    width: 200px;
+    padding-left: 10px;}
+.img {
+    display: block;
+    width: 250px;
+    height: auto;
+    border: 2px solid #ff6600; 
+    border-radius: 10px;
+}
+.separar{padding-bottom: 30px;}
+.color{background-color: rgb(42, 42, 122);}
+.boton {
+    color: white; 
+    background-color: #004fa3; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 5px;
+    display: inline-block; 
+}
+
+h3 {
+    font-size: 24px;
+    color: #ff6600; 
+    margin-bottom: 10px;
+    font-weight: bold; 
+}
+
+.section {
+    grid-column:  3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+/* estilos del footer */
+
+footer{
+   background-color: #0E0D0D;
+   text-align: center;
+   color: whitesmoke
+} 
+    
+footer h4{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 11px;
+}
+.footer-contacto{
+    background-color: black;
+    padding-top: 100px;
+
+}
+
+.logo{
+    width: 100%;
+}
+
+
+/* Estilo para celular */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .imgg {
+        width: 100px;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+/* estilo para table */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+    .imgg {
+        width: 150px;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+    nav ul li {
+        margin-right: 20px;
+    }
+}
+    img {
+        max-width: 100%;
+        height: auto;
+}
